@@ -1,8 +1,14 @@
-<h1>{{title}}</h1>
-@defer (on hover) {
-  <app-deferred-card></app-deferred-card>
-} @loading {
-  <h2>loading in the app component...</h2>
-} @placeholder {
-  <h2>placeholder in the app component...</h2>
-}
+
+<div class="flex justify-center">
+  <div class="overflow-hidden bg-white shadow sm:rounded-lg w-80">
+    <div class="px-4 py-5 sm:p-6">
+    @defer (on hover) {
+      <app-deferred-card></app-deferred-card>
+    } @loading {
+      <div class="h-6 bg-slate-200 rounded"></div>
+    } @placeholder {
+      <h2 class="font-bold text-lg">Hover me to start loading</h2>
+    }
+    </div>
+  </div>
+</div>

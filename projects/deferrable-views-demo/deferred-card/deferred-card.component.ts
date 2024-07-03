@@ -6,13 +6,13 @@ import { ApiService } from '../api.service';
   standalone: true,
   imports: [],
   templateUrl: './deferred-card.component.html',
-  styleUrl: './deferred-card.component.scss',
+  styleUrl: './deferred-card.component.css',
 })
 export class DeferredCardComponent {
   public randomListOfText: string[] = [];
 
   constructor() {
-    this.randomListOfText = this.generateRandomListOfText(30000);
+    this.randomListOfText = this.generateRandomListOfText(100000);
   }
 
   private generateRandomListOfText(length: number): string[] {

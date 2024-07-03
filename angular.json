@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "css"
         }
       },
       "root": "projects/deferrable-views-demo",
@@ -20,20 +20,16 @@
             "outputPath": "dist/deferrable-views-demo",
             "index": "projects/deferrable-views-demo/src/index.html",
             "browser": "projects/deferrable-views-demo/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/deferrable-views-demo/tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
+            "inlineStyleLanguage": "css",
             "assets": [
               {
                 "glob": "**/*",
                 "input": "projects/deferrable-views-demo/public"
               }
             ],
-            "styles": [
-              "projects/deferrable-views-demo/src/styles.scss"
-            ],
+            "styles": ["projects/deferrable-views-demo/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -78,21 +74,16 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/deferrable-views-demo/tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
+            "inlineStyleLanguage": "css",
             "assets": [
               {
                 "glob": "**/*",
                 "input": "projects/deferrable-views-demo/public"
               }
             ],
-            "styles": [
-              "projects/deferrable-views-demo/src/styles.scss"
-            ],
+            "styles": ["projects/deferrable-views-demo/src/styles.css"],
             "scripts": []
           }
         }
