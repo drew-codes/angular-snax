@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { DeferredCardComponent } from '../../deferred-card/deferred-card.component';
+import { DeferredCardComponent } from '../components/deferred-card/deferred-card.component';
 
 @Component({
   selector: 'app-root',
